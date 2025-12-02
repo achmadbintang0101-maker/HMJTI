@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda HMJTI POLIJE</title>
+    <link rel="stylesheet" href="../styles/beranda.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      /* Additional styles untuk memastikan logo tampil dengan baik */
+      header img {
+        object-fit: contain;
+        border-radius: 50%;
+        background: white;
+        padding: 2px;
+      }
+
+      .footerImg {
+        object-fit: contain;
+      }
+
+      /* Loading animation untuk gambar */
+      img {
+        transition: opacity 0.3s ease;
+      }
+
+      img:not([src]) {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <img
+        src="../assets/beranda/Logo1.1.png"
+        alt="Logo HMJ TI"
+        width="60"
+        height="60"
+      />
+      <div class="logo">Beranda HMJ TI</div>
+      <nav>
+        <a href="../pages/beranda.html">Beranda</a>
+        <a href="../pages/tentang.html">Tentang</a>
+        <a href="../pages/staf.html">Staf</a>
+        <a href="../pages/proker.html">Proker</a>
+        <a href="../pages/galeri.html">Galeri</a>
+      </nav>
+    </header>
+
+    <!-- Keterangan Section -->
+    <section class="keterangan" id="tentang">
+      <div class="keterangan-left">
+        <h2>Keterangan tentang<br /><span>HMJ TI</span></h2>
+        <p>
+          Membangun HMJ TI Politeknik Negeri Jember sebagai wadah yang
+          menjunjung jiwa sosial dan kekeluargaan untuk mendukung pengembangan
+          akademik serta non-akademik mahasiswa guna menciptakan lingkungan
+          inklusif dan kolaboratif yang mengakomodasi potensi mahasiswa
+          Teknologi Informasi dalam prestasi, keterampilan, dan pengabdian
+          masyarakat, untuk mewujudkan mahasiswa berintegritas, kompeten, dan
+          berdaya saing tinggi.
+        </p>
+      </div>
+      <div class="keterangan-right">
+        <div class="keterangan-icon">
+          <img
+            src="../assets/hmjti.png"
+            alt="Logo HMJ TI"
+            width="150"
+            height="150"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%2228%22 fill=%22%231e90ff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2220%22 font-weight=%22bold%22%3EHMJ%3C/text%3E%3C/svg%3E'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Berita dan Layanan -->
+    <section class="info-section">
+      <div class="info-card">
+        <a href="./berita.html">
+        <div class="info-icon-box"></div>
+        <img
+          src="../assets/beranda/NEWS.png"
+          alt="LAYANAN"
+          width="150"
+          height="150"
+          onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%2228%22 fill=%22%231e90ff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2220%22 font-weight=%22bold%22%3EHMJ%3C/text%3E%3C/svg%3E'"
+        />
+        </a>
+      </div>
+      <div class="info-card">
+        <div class="info-icon-box"></div>
+        <img
+          src="../assets/beranda/LAYANAN.png"
+          alt="LAYANAN"
+          width="150"
+          height="150"
+          onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%2228%22 fill=%22%231e90ff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2220%22 font-weight=%22bold%22%3EHMJ%3C/text%3E%3C/svg%3E'"
+        />
+      </div>
+    </section>
+
+    <!-- Departemen Section -->
+    <section class="departemen-section" id="departemen">
+      <div class="departemen-container">
+        <div class="dept-buttons-wrapper">
+          <button class="dept-button active" data-dept="humas">
+            Dept.Humas Kominfo
+          </button>
+          <button class="dept-button" data-dept="kewirausahaan">
+            Departemen Kewirausahaan
+          </button>
+          <button class="dept-button" data-dept="keilmuan">
+            Departemen Keilmuan
+          </button>
+          <button class="dept-button" data-dept="kaderisasi">
+            Departemen Kaderisasi
+          </button>
+          <button class="dept-button" data-dept="administrasi">
+            Departemen Administrasi
+          </button>
+        </div>
+
+        <div class="dept-info-box">
+          <h3>Penjelasan Departemen</h3>
+          <div class="dept-description" id="deptDescription">
+            <p>
+              Departemen Humas & Kominfo memiliki tugas untuk membuka sistem
+              informasi, hubungan masyarakat di internal dan eksternal,
+              merapikan serta meningkatkan SDM melalui pelatihan dan pembinaan
+              yang terstruktur, untuk memiliki kemampuan di bidang publisitas
+              hingga pengelolaan media yang informatif.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kritik dan Saran -->
+    <section class="kritik-section" id="kritik">
+      <div class="kritik-wrapper">
+        <div class="kritik-left">
+          <h2>KRITIK DAN SARAN</h2>
+        </div>
+        <div class="kritik-right">
+          <div class="kritik-form-box">
+            <h4>Kritik dan Saran</h4>
+            <form id="kritikForm">
+              <input type="text" placeholder="Nama" required />
+              <input type="email" placeholder="Email" required />
+              <textarea placeholder="Masukan" required></textarea>
+              <button type="submit">KIRIM</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-main">
+        <div class="footer-banner">
+          <!-- Kolom 1: Logo & Deskripsi -->
+          <div class="footer-col footer-left">
+            <div class="footer-logo">
+              <img
+                class="footerImg"
+                src="../assets/hmjti.png"
+                alt="Footer Logo HMJ TI"
+                width="45"
+                height="45"
+                onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2245%22 height=%2245%22%3E%3Ccircle cx=%2222.5%22 cy=%2222.5%22 r=%2220%22 fill=%22%231e90ff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2216%22 font-weight=%22bold%22%3EHMJ%3C/text%3E%3C/svg%3E'"
+              />
+              <h1 class="footer-title">HMJ TI</h1>
+            </div>
+            <p class="footer-desc">
+              Himpunan Mahasiswa Jurusan Teknologi Informasi (HMJ TI) merupakan
+              organisasi kemahasiswaan di Politeknik Negeri Jember yang menaungi
+              mahasiswa dan alumni Jurusan Teknologi Informasi Politeknik Negeri
+              Jember.<br />
+              Bersinergi dari hati, berdedikasi untuk TI<br />
+              #TI!PC!!!
+            </p>
+          </div>
+
+          <!-- Kolom 2: Office -->
+          <div class="footer-col footer-office">
+            <h3>Office</h3>
+            <p class="office-name">Politeknik Negeri Jember</p>
+            <p class="office-address">
+              Jl. Mastrip PO.BOX 164 Jember,<br />
+              Jawa Timur 68101 Indonesia
+            </p>
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:+62331333532" class="footer-phone"
+                >(+62) 331-333532</a
+              >
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:jti@polije.ac.id" class="footer-email"
+                >jti@polije.ac.id</a
+              >
+            </p>
+          </div>
+
+          <!-- Kolom 3: Links -->
+          <div class="footer-col footer-links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="../pages/beranda.html">Beranda</a></li>
+              <li><a href="../pages/tentang.html">Tentang</a></li>
+              <li><a href="../pages/staf.html">Staf</a></li>
+              <li><a href="../pages/proker.html">Proker</a></li>
+              <li><a href="../pages/galeri.html">Galeri</a></li>
+            </ul>
+          </div>
+
+          <!-- Kolom 4: Social Media -->
+          <div class="footer-col footer-right">
+            <h3>Follow Us On</h3>
+            <a
+              href="https://www.instagram.com/hmjti_polije"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a
+              href="https://www.tiktok.com/@hmjti_polije"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-tiktok"></i>
+              <span>TikTok</span>
+            </a>
+            <a
+              href="https://www.youtube.com/c/hmjti_polije"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-youtube"></i>
+              <span>YouTube</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-container">
+          <p>&copy; 2025 HMJ TI POLIJE. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Script untuk memastikan logo HMJ tampil di semua tempat
+      document.addEventListener("DOMContentLoaded", function () {
+        // Tambahkan event listener untuk tombol departemen
+        const deptButtons = document.querySelectorAll(".dept-button");
+        const deptDescription = document.getElementById("deptDescription");
+
+        const departmentData = {
+          humas: {
+            title: "Departemen Humas & Kominfo",
+            desc: "Departemen Humas & Kominfo memiliki tugas untuk membuka sistem informasi, hubungan masyarakat di internal dan eksternal, merapikan serta meningkatkan SDM melalui pelatihan dan pembinaan yang terstruktur, untuk memiliki kemampuan di bidang publisitas hingga pengelolaan media yang informatif.",
+          },
+          kewirausahaan: {
+            title: "Departemen Kewirausahaan",
+            desc: "Departemen Kewirausahaan bertugas mengembangkan jiwa entrepreneurship mahasiswa TI, mengelola kegiatan bisnis HMJ, serta membuka peluang kerjasama dengan pihak eksternal untuk meningkatkan kemampuan wirausaha dan kemandirian finansial organisasi.",
+          },
+          keilmuan: {
+            title: "Departemen Keilmuan",
+            desc: "Departemen Keilmuan bertanggung jawab dalam mengembangkan kompetensi akademik mahasiswa TI melalui berbagai kegiatan seperti seminar, workshop, pelatihan teknis, dan kompetisi yang mendukung peningkatan hard skills di bidang teknologi informasi.",
+          },
+          kaderisasi: {
+            title: "Departemen Kaderisasi",
+            desc: "Departemen Kaderisasi bertugas membina dan mengembangkan karakter serta kepemimpinan anggota HMJ TI melalui program pelatihan, mentoring, dan kegiatan pengembangan soft skills untuk mencetak kader-kader organisasi yang berkualitas.",
+          },
+          administrasi: {
+            title: "Departemen Administrasi",
+            desc: "Departemen Administrasi mengelola segala urusan administratif organisasi, termasuk surat-menyurat, dokumentasi kegiatan, pengarsipan, dan pengelolaan database anggota untuk memastikan kelancaran operasional HMJ TI.",
+          },
+        };
+
+        deptButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Remove active class dari semua button
+            deptButtons.forEach((btn) => btn.classList.remove("active"));
+            // Add active class ke button yang diklik
+            this.classList.add("active");
+
+            // Update deskripsi
+            const dept = this.getAttribute("data-dept");
+            if (departmentData[dept]) {
+              deptDescription.style.opacity = "0";
+              setTimeout(() => {
+                deptDescription.innerHTML = `<p>${departmentData[dept].desc}</p>`;
+                deptDescription.style.opacity = "1";
+              }, 300);
+            }
+          });
+        });
+
+        // Handle form submission
+        const kritikForm = document.getElementById("kritikForm");
+        if (kritikForm) {
+          kritikForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert(
+              "Terima kasih atas kritik dan saran Anda! Pesan Anda telah terkirim."
+            );
+            this.reset();
+          });
+        }
+
+        // Smooth scrolling untuk navigasi
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              target.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proker Departemen Kominfo - HMJ TI POLIJE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/proker.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <img src="../assets/hmjti.png" alt="LogoHeader" width="60" height="60" />
+      <div class="logo">HMJ TI</div>
+      <nav>
+        <a href="../pages/beranda.html">Beranda</a>
+        <a href="../pages/tentang.html">Tentang</a>
+        <a href="../pages/staf.html">Staf</a>
+        <a href="../pages/proker.html">Proker</a>
+        <a href="../pages/galeri.html">Galeri</a>
+      </nav>
+    </header>
+
+    <section class="judul">
+      <div class="page-title">
+        <h1>Departemen Kominfo</h1>
+        <h2 style="font-size: 1.3rem; margin-top: 10px">Program Kerja</h2>
+      </div>
+      <p class="page-subtitle">
+        Departemen Kominfo bertanggung jawab untuk mengelola penyebaran
+        informasi dan media publikasi guna meningkatkan komunikasi dan citra
+        organisasi. Berikut adalah daftar program kerja yang dilaksanakan.
+      </p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="container">
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="proker-card">
+              <div class="proker-card-body">
+                <div class="proker-card-title">Social Media Officer</div>
+                <div class="proker-penanggung-jawab">
+                  <i class="fas fa-user-circle"></i>
+                  <span>Abi Nugroho</span>
+                </div>
+                <button
+                  class="proker-detail-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal1"
+                >
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="proker-card">
+              <div class="proker-card-body">
+                <div class="proker-card-title">Optimalisasi Website</div>
+                <div class="proker-penanggung-jawab">
+                  <i class="fas fa-user-circle"></i>
+                  <span>Doni Wahyudi</span>
+                </div>
+                <button
+                  class="proker-detail-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal2"
+                >
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="proker-card">
+              <div class="proker-card-body">
+                <div class="proker-card-title">Information Center</div>
+                <div class="proker-penanggung-jawab">
+                  <i class="fas fa-user-circle"></i>
+                  <span>Muhammad Lukmanul Hakim</span>
+                </div>
+                <button
+                  class="proker-detail-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal3"
+                >
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="proker-card">
+              <div class="proker-card-body">
+                <div class="proker-card-title">Rekap Sekretaris Departemen</div>
+                <div class="proker-penanggung-jawab">
+                  <i class="fas fa-user-circle"></i>
+                  <span>Videlma Sufi Romadhani</span>
+                </div>
+                <button
+                  class="proker-detail-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal4"
+                >
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <button class="back-btn" onclick="window.location.href='proker.html'">
+            Kembali ke Daftar Departemen
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Social Media Officer</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="detail-item">
+              <div class="detail-label">
+                <i class="fas fa-user-tie"></i>
+                Penanggung Jawab
+              </div>
+              <div class="detail-value">Abi Nugroho</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">
+                <i class="fas fa-calendar-alt"></i>
+                Waktu Pelaksanaan
+              </div>
+              <div class="detail-value">Satu Periode Kepengurusan</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">
+                <i class="fas fa-map-marker-alt"></i>
+                Deskripsi
+              </div>
+              <div class="detail-value">
+                Pengelolaan akun media sosial resmi himpunan secara profesional.
+                Bertanggung jawab atas branding, pembuatan konten kreatif, serta
+                menjaga interaksi aktif dengan followers guna menyebarkan
+                informasi terkini seputar jurusan dan teknologi informasi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Optimalisasi Website</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="detail-item">
+              <div class="detail-label">
+                <i class="fas fa-user-tie"></i>
+                Penanggung Jawab
+              </div>
+              <div class="detail-value">Doni Wahyudi</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">
+                <i class="fas fa-calendar-alt"></i>
+                Waktu Pelaksanaan
+              </div>
+              <div class="detail-value">Satu Periode Kepengurusan</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">
+                <i class="fas fa-map-marker-alt"></i>
+                Deskripsi
+              </div>
+              <div class="detail-value">
+                Pemeliharaan dan pengembangan website resmi HMJ TI. Fokus pada
+                peningkatan UI/UX, pembaruan konten berita, serta memastikan
+                website dapat diakses dengan mudah sebagai pusat data dan
+                informasi digital himpunan.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Information Center</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="detail-item">
+              <div class="detail-label">
+                <i class="fas fa-user-tie"></i>
+                Penanggung Jawab
+              </div>
+              <div class="detail-value">Muhammad Lukmanul Hakim</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">
+                <i class="fas fa-calendar-alt"></i>
+                Waktu Pelaksanaan
+              </div>
+              <div class="detail-value">Satu Periode Kepengurusan</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">
+                <i class="fas fa-map-marker-alt"></i>
+                Deskripsi
+              </div>
+              <div class="detail-value">
+                Layanan pusat bantuan dan informasi satu pintu bagi mahasiswa.
+                Berfungsi menjembatani pertanyaan, keluhan, maupun aspirasi
+                mahasiswa terkait akademik maupun kemahasiswaan untuk diteruskan
+                kepada pihak terkait.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="modal4" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Rekap Sekretaris Departemen</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="detail-item">
+              <div class="detail-label">
+                <i class="fas fa-user-tie"></i>
+                Penanggung Jawab
+              </div>
+              <div class="detail-value">Videlma Sufi Romadhani</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">
+                <i class="fas fa-calendar-alt"></i>
+                Waktu Pelaksanaan
+              </div>
+              <div class="detail-value">Satu Periode Kepengurusan</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">
+                <i class="fas fa-map-marker-alt"></i>
+                Deskripsi
+              </div>
+              <div class="detail-value">
+                Administrasi internal Departemen Kominfo yang meliputi
+                pengarsipan dokumen, surat-menyurat, serta notulensi rapat untuk
+                menjaga kerapian data organisasi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-main">
+        <div class="footer-banner">
+          <!-- Kolom 1: Logo & Deskripsi -->
+          <div class="footer-col footer-left">
+            <div class="footer-logo">
+              <img
+                class="footerImg"
+                src="../assets/hmjti.png"
+                alt="Footer Logo"
+              />
+              <h1 class="footer-title">HMJ TI</h1>
+            </div>
+            <p class="footer-desc">
+              Himpunan Mahasiswa Jurusan Teknologi Informasi (HMJ TI) merupakan
+              organisasi kemahasiswaan di Politeknik Negeri Jember yang menaungi
+              mahasiswa dan alumni Jurusan Teknologi Informasi Politeknik Negeri
+              Jember.<br />
+              Bersinergi dari hati, berdedikasi untuk TI<br />
+              #TI!PC!!!
+            </p>
+          </div>
+
+          <!-- Kolom 2: Office -->
+          <div class="footer-col footer-office">
+            <h3>Office</h3>
+            <p class="office-name">Politeknik Negeri Jember</p>
+            <p class="office-address">
+              Jl. Mastrip PO.BOX 164 Jember,<br />
+              Jawa Timur 68101 Indonesia
+            </p>
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:+62331333532" class="footer-phone"
+                >(+62) 331-333532</a
+              >
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:jti@polije.ac.id" class="footer-email"
+                >jti@polije.ac.id</a
+              >
+            </p>
+          </div>
+
+          <!-- Kolom 3: Links -->
+          <div class="footer-col footer-links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="../pages/beranda.html">Beranda</a></li>
+              <li><a href="../pages/tentang.html">Tentang</a></li>
+              <li><a href="../pages/staf.html">Staf</a></li>
+              <li><a href="../pages/proker.html">Proker</a></li>
+              <li><a href="../pages/galeri.html">Galeri</a></li>
+            </ul>
+          </div>
+
+          <!-- Kolom 4: Social Media -->
+          <div class="footer-col footer-right">
+            <h3>Follow Us On</h3>
+            <a
+              href="https://www.instagram.com/hmjti_polije"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a
+              href="https://www.tiktok.com/@hmjti_polije"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-tiktok"></i>
+              <span>TikTok</span>
+            </a>
+            <a
+              href="https://www.youtube.com/c/hmjti_polije"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-youtube"></i>
+              <span>YouTube</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-container">
+          <p>&copy; 2025 HMJ TI POLIJE. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,933 @@
+    /* Reset Dasar */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* ===== HEADER STYLES ===== */
+    header {
+    background-color: rgba(0, 8, 20, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 6px;
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+    height: 64px;
+    backdrop-filter: blur(5px);
+    }
+
+    header img {
+    position: absolute;
+    left: 10px;
+    }
+
+    header .logo {
+    position: absolute;
+    left: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+    header nav {
+    display: flex;
+    gap: 40px;
+    }
+
+    header nav a {
+    color: white;
+    text-decoration: none;
+    }
+
+    header nav a:hover {
+    color: #22d3ee;
+    }
+
+    /* ===== FOOTER STYLES ===== */
+    footer {
+    width: 100%;
+    bottom: 0;
+    background: #001025;
+    color: #fff;
+    padding: 50px 0 20px;
+    border-top-left-radius: 0px;
+    font-size: 13px;
+    line-height: 1.6;
+    }
+
+    .footer-main {
+    width: 85%;
+    margin: auto;
+    max-width: 1200px;
+    }
+
+    .footer-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 35px;
+    margin-bottom: 25px;
+    }
+
+    /* Kolom Footer */
+    .footer-col {
+    flex: 1;
+    }
+
+    /* Kolom 1: Logo & Deskripsi */
+    .footer-left {
+    flex: 1.6;
+    padding-right: 15px;
+    }
+
+    .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 5px;
+    }
+
+    .footerImg {
+    width: 45px;
+    height: 45px;
+    }
+
+    .footer-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+    }
+
+    .footer-desc {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+    color: #ddd;
+    text-align: justify;
+    }
+
+    /* Column 2: Office */
+    .footer-office h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+    }
+
+    .footer-office .office-name {
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    line-height: 1.5;
+    }
+
+    .footer-office .office-address {
+    margin: 0 0 12px 0;
+    line-height: 1.6;
+    font-size: 13px;
+    color: #ddd;
+    }
+
+    .footer-office p {
+    margin: 8px 0;
+    line-height: 1.6;
+    font-size: 13px;
+    color: #ddd;
+    }
+
+    .footer-office p strong {
+    color: #fff;
+    font-weight: 600;
+    margin-right: 5px;
+    }
+
+    .footer-phone {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    }
+
+    .footer-phone:hover {
+    color: #fff;
+    }
+
+    .footer-email {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    }
+
+    .footer-email:hover {
+    color: #fff;
+    }
+
+    /* Column 3: Links */
+    .footer-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+    }
+
+    .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+
+    .footer-links ul li {
+    margin: 8px 0;
+    }
+
+    .footer-links ul li a {
+    color: #b8b8d8;
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+    font-size: 13px;
+    line-height: 1.6;
+    display: inline-block;
+    }
+
+    .footer-links ul li a:hover {
+    color: #fff;
+    padding-left: 5px;
+    }
+
+    /* Column 4: Social Media */
+    .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    }
+
+    .footer-right h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+    }
+
+    .footer-right .social-link {
+    color: #1a1a2e;
+    background: #fff;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    min-width: 150px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-right .social-link i {
+    font-size: 1.1rem;
+    }
+
+    .footer-right .social-link span {
+    font-size: 13px;
+    font-weight: 600;
+    }
+
+    .footer-right .social-link:hover {
+    transform: translateY(-3px);
+    background: #f5f5f5;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.15);
+    }
+
+    /* Copyright */
+    .footer-container {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(253, 251, 251, 0.623);
+    }   
+
+    .footer-container p {
+    margin: 0;
+    color: #bbb;
+    font-size: 13px;
+    }
+
+/* ==========================================
+   FILE CSS - hero-section.css atau tambahkan ke style.css
+   ========================================== */
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 500px;
+    background-image: url('background.jpeg'); /* Ganti dengan path gambar gedung Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Overlay gelap untuk membuat teks lebih terbaca */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 8, 20, 0.5) 0%,
+        rgba(0, 16, 37, 0.7) 50%,
+        rgba(0, 60, 139, 0.6) 100%
+    );
+    z-index: 1;
+}
+
+/* ==========================================
+   FILE CSS - hero-section.css atau tambahkan ke style.css
+   ========================================== */
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 500px;
+    background-image: url('background.jpeg'); /* Ganti dengan path gambar gedung Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Overlay gelap untuk membuat teks lebih terbaca */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 8, 20, 0.5) 0%,
+        rgba(0, 16, 37, 0.7) 50%,
+        rgba(0, 60, 139, 0.6) 100%
+    );
+    z-index: 1;
+}
+
+/* Konten Hero */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    width: 100%;
+    padding: 0 20px;
+    animation: fadeInUp 1s ease-out;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    border-bottom: 3px solid #004ba0;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+/* Animasi */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 400px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    
+    .hero-content p {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        height: 350px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+    
+    .hero-content p {
+        font-size: 0.85em;
+        line-height: 1.6;
+    }
+}
+
+/* Animasi */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 400px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    
+    .hero-content p {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        height: 350px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+    
+    .hero-content p {
+        font-size: 0.85em;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        height: 350px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+    
+    .hero-content p {
+        font-size: 0.85em;
+        line-height: 1.6;
+    }
+}
+
+    /* PERUBAHAN DI SINI */
+    body {
+        font-family: "Poppins", sans-serif; /* Ganti dengan font yang sesuai */
+        line-height: 1.6;
+        color: white; /* Diubah menjadi white */
+        
+        /* Background baru dengan gradient */
+        background: linear-gradient(
+            to bottom,
+            #000814 0%,
+            #001025 50%,
+            #003C8B 100%
+        );
+        background-attachment: fixed;
+        min-height: 100vh; /* Ditambahkan */
+        margin: 0; /* Diperbarui (meskipun sudah di reset, lebih eksplisit) */
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    /* Warna Utama */
+    :root {
+        --primary-color: #0c1a2c; /* Biru gelap untuk latar belakang utama */
+        --secondary-color: #004ba0; /* Warna aksen/merah bata */
+        --text-light: #ffffff;
+        --text-dark: #333333;
+    }
+
+
+/* ==========================================
+   FILE CSS - hero-section.css atau tambahkan ke style.css
+   ========================================== */
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 500px;
+    background-image: url('background.jpeg'); /* Ganti dengan path gambar gedung Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Overlay gelap untuk membuat teks lebih terbaca */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 8, 20, 0.5) 0%,
+        rgba(0, 16, 37, 0.7) 50%,
+        rgba(0, 60, 139, 0.6) 100%
+    );
+    z-index: 1;
+}
+
+/* Konten Hero */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    width: 100%;
+    padding: 0 20px;
+    animation: fadeInUp 1s ease-out;
+    margin: 0 auto;
+    background: transparent; /* Menghilangkan background */
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    border-bottom: 3px solid #004ba0;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    margin: 0;
+    background: transparent; /* Menghilangkan background */
+}
+
+/* Animasi */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 400px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    
+    .hero-content p {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        height: 350px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+    
+    .hero-content p {
+        font-size: 0.85em;
+        line-height: 1.6;
+    }
+}
+
+    /* 2. Visi & Misi Section */
+    .visi-misi-section {
+        background-color: transparent; /* Diubah menjadi transparent agar gradient body terlihat */
+        color: var(--text-light);
+        padding: 50px 0;
+    }
+
+    .visi-misi-section .container {
+        display: flex;
+        gap: 40px;
+        /* Flexbox untuk menempatkan Visi dan Misi bersebelahan */
+    }
+
+    .content-box {
+        flex: 1;
+    }
+
+    .content-box h2 {
+        color: var(--secondary-color);
+        margin-bottom: 15px;
+    }
+
+    .misi ol {
+        list-style-position: inside;
+    }
+
+    .misi ol li {
+        margin-bottom: 10px;
+    }
+
+    /* 3. Sejarah HMJTI Section */
+    .sejarah-section {
+        padding: 40px 0;
+        background-color: rgba(255, 255, 255, 0.1); /* Diubah ke transparan dengan sedikit warna */
+        color: white;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .sejarah-section h2 {
+        color: var(--secondary-color); /* Diubah ke secondary-color agar terlihat */
+        margin-bottom: 20px;
+    }
+
+    /* 4. Logo dan Filosofi Section */
+    .logo-filosofi-section {
+        padding: 50px 0;
+        background-color: transparent;
+    }
+
+    .logo-filosofi-section .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Layout dua kolom */
+        gap: 40px;
+    }
+
+    .logo-area {
+        text-align: center;
+    }
+
+    .logo-area .image-logo {
+        /* Gaya untuk area logo (lingkaran di gambar) */
+        width: 300px;
+        height: 300px;
+        margin: 20px auto;
+        background-color: #ffffff00;
+        border: 5px slid var(--primary-color);
+        border-radius: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .filosofi-content ol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        list-style: none; /* Hilangkan bullet default */
+    }
+
+    .filosofi-content ol li {
+        background-color: rgba(255, 255, 255, 0.1); /* Diubah untuk menyesuaikan background gelap */
+        padding: 15px;
+        border-left: 5px solid var(--secondary-color);
+        counter-increment: list-item;
+    }
+
+    .filosofi-content ol li::before {
+        content: counter(list-item) ". ";
+        font-weight: bold;
+        color: var(--secondary-color);
+        font-size: 1.2em;
+    }
+
+    /* 5. Lokasi Section */
+    .lokasi-section {
+        background-color: transparent;
+        color: var(--text-light);
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .lokasi-section h2 {
+        margin-bottom: 20px;
+        color: var(--secondary-color);
+    }
+
+    .map-placeholder {
+        height: 400px;
+        background-color: #2a3e51; /* Diubah agar cocok dengan tema gelap */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-light); /* Diubah agar teks terlihat */
+        font-size: 1.5em;
+        /* Ini akan menjadi iframe atau div dengan background map */
+    }
+
+    /* 6. Kontak Section */
+    .kontak-section {
+        background-color: transparent; /* Diubah menjadi transparent */
+        color: var(--text-light);
+        padding: 20px 0 50px 0;
+        text-align: center;
+    }
+
+    .kontak-section h2 {
+        color: var(--text-light);
+        margin-bottom: 30px;
+    }
+
+    .kontak-info {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        /* Flexbox untuk ikon kontak */
+    }
+
+    .kontak-item {
+        flex: 1;
+    }
+
+    .kontak-item .icon {
+        font-size: 2em;
+        display: block;
+        margin-bottom: 10px;
+        color: var(--secondary-color); /* Warna ikon */
+    }
+
+/* ===== SCROLL TO TOP BUTTON ===== */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    background: linear-gradient(135deg, #004ba0, #22d3ee);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 4px 15px rgba(0, 75, 160, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#scrollTopBtn:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 75, 160, 0.6);
+}
+
+#scrollTopBtn:active {
+    transform: scale(0.95);
+}
+
+/* ===== HOVER EFFECTS ===== */
+.kontak-item {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.kontak-item:hover {
+    background: rgba(0, 75, 160, 0.1);
+}
+
+.kontak-item .icon {
+    transition: all 0.3s ease;
+}
+
+.kontak-item:hover .icon {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.filosofi-content ol li {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.content-box {
+    transition: all 0.3s ease;
+}
+
+.content-box:hover {
+    background: rgba(0, 75, 160, 0.05);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 75, 160, 0.2);
+}
+
+/* ===== NAVIGATION EFFECTS ===== */
+header nav a {
+    position: relative;
+}
+
+header nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #22d3ee;
+    transition: width 0.3s ease;
+}
+
+header nav a:hover::after {
+    width: 80%;
+}
+
+header nav a.active {
+    color: #22d3ee;
+}
+
+/* ===== HEADER TRANSITION ===== */
+header {
+    transition: box-shadow 0.3s ease;
+}
+
+/* ===== GOOGLE MAPS STYLING ===== */
+.map-placeholder iframe {
+    display: block;
+    width: 100%;
+}
+
+/* ===== LOGO ROTATION ===== */
+.image-logo img {
+    transition: all 0.5s ease;
+}
+
+.image-logo:hover img {
+    transform: rotate(360deg) scale(1.1);
+}
+
+/* ===== SEJARAH HOVER ===== */
+.sejarah-section p {
+    transition: all 0.3s ease;
+}
+
+.sejarah-section:hover p {
+    transform: scale(1.02);
+}
+
+/* ===== FOOTER LINKS ANIMATION ===== */
+.footer-links ul li a {
+    position: relative;
+}
+
+.footer-links ul li a::before {
+    content: '→ ';
+    position: absolute;
+    left: -20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.footer-links ul li a:hover::before {
+    opacity: 1;
+    left: -15px;
+}
+
+/* ===== CUSTOM SCROLLBAR ===== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000814;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #004ba0, #22d3ee);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #22d3ee, #004ba0);
+}
+
+/* ===== SELECTION COLOR ===== */
+::selection {
+    background: #004ba0;
+    color: white;
+}
+
+::-moz-selection {
+    background: #004ba0;
+    color: white;
+}
+
+/* ===== RESPONSIVE SCROLL BUTTON ===== */
+@media (max-width: 768px) {
+    #scrollTopBtn {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 18px;
+    }
+}

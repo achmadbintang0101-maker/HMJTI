@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeri HMJTI POLIJE</title>
+
+<style>
+
+/* ---------------------- GLOBAL ---------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(#001a33, #003366);
+    color: white;
+}
+
+/* -------------------- NAVBAR ----------------------- */
+/* ===== HEADER STYLES ===== */
+header {
+  background-color: rgba(0, 8, 20, 0.8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 6px;
+  position: sticky;
+  top: 0%;
+  z-index: 1000;
+  height: 64px;
+  backdrop-filter: blur(5px);
+}
+
+header img {
+  position: absolute;
+  left: 10px;
+}
+
+header .logo {
+  position: absolute;
+  left: 80px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  gap: 40px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #22d3ee;
+}
+
+/* ---------------- HEADER ABU-ABU ------------------- */
+.galeri-header {
+    background-color: #001025;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.galeri-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.galeri-header .underline {
+    width: 120px;
+    height: 4px;
+    background-color: #2aa8ff;
+    border-radius: 5px;
+    margin: 0 auto 20px auto;
+}
+
+.galeri-header p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ------------------- GRID GALERI ------------------- */
+.gallery-container {
+    width: 85%;
+    max-width: 880px;
+    margin: 40px auto 60px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 42px;
+}
+
+/* ------------------- CARD ------------------- */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 4px solid #00c3ff;
+    width: 300px;
+    height: 430px;
+    margin: 35px;
+}
+
+.card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    border: 10px solid white;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.card-desc {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* ---------------- BUTTON ------------------- */
+.card button {
+    background-color: #009dff;
+    color: white;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.card button:hover {
+    background-color: #0080d4;
+}
+
+/* ===== FOOTER STYLES ===== */
+footer {
+  width: 100%;
+  bottom: 0;
+  background: #001025;
+  color: #fff;
+  padding: 50px 0 20px;
+  border-top-left-radius: 0px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.footer-main {
+  width: 85%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.footer-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 35px;
+  margin-bottom: 25px;
+}
+
+/* Kolom Footer */
+.footer-col {
+  flex: 1;
+}
+
+/* Kolom 1: Logo & Deskripsi */
+.footer-left {
+  flex: 1.6;
+  padding-right: 15px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 5px;
+}
+
+.footerImg {
+  width: 45px;
+  height: 45px;
+}
+
+.footer-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.footer-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+  color: #ddd;
+  text-align: justify;
+}
+
+/* Column 2: Office */
+.footer-office h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.footer-office .office-name {
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.footer-office .office-address {
+  margin: 0 0 12px 0;
+  line-height: 1.6;
+  font-size: 13px;
+  color: #ddd;
+}
+
+.footer-office p {
+  margin: 8px 0;
+  line-height: 1.6;
+  font-size: 13px;
+  color: #ddd;
+}
+
+.footer-office p strong {
+  color: #fff;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.footer-phone {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-phone:hover {
+  color: #fff;
+}
+
+.footer-email {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-email:hover {
+  color: #fff;
+}
+
+/* Column 3: Links */
+.footer-links h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links ul li a {
+  color: #b8b8d8;
+  text-decoration: none;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+  font-size: 13px;
+  line-height: 1.6;
+  display: inline-block;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+  padding-left: 5px;
+}
+
+/* Column 4: Social Media */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.footer-right h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+}
+
+.footer-right .social-link {
+  color: #1a1a2e;
+  background: #fff;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  min-width: 150px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-right .social-link i {
+  font-size: 1.1rem;
+}
+
+.footer-right .social-link span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.footer-right .social-link:hover {
+  transform: translateY(-3px);
+  background: #f5f5f5;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.15);
+}
+
+/* Copyright */
+.footer-container {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(253, 251, 251, 0.623);
+}   
+
+.footer-container p {
+  margin: 0;
+  color: #bbb;
+  font-size: 13px;
+}
+
+.footer-sosmed img {
+    width: 36px;
+    filter: invert(0%);
+}
+
+/* ---------------- HALAMAN AOM ---------------- */
+#aom-page {
+    position: relative; 
+    display: none;
+    padding-bottom: 50px;
+}
+
+.aom-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* GAMBAR TETAP DI TENGAH */
+.img-box {
+    border: 5px solid #00c3ff;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: center;  /* pusatkan gambar */
+    margin: 0 auto;           /* pusatkan box */
+    width: max-content;       /* ukuran background putih tetap */
+}
+
+.img-box img {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 12px;
+}
+
+/* TEKS RATA KIRI */
+.aom-container h2,
+.aom-container p {
+    text-align: left;
+}
+
+.aom-container h2 {
+    margin-top: 35px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.aom-container p {
+    margin-top: 20px;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* TOMBOL DI POJOK KIRI ATAS */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    background-color: #00aaff;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.back-btn:hover {
+    background-color: #0088cc;
+}
+
+/* ---------------- HALAMAN EPIM ---------------- */
+#epim-page {
+    position: relative; 
+    display: none;
+    padding-bottom: 50px;
+}
+
+.epim-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* GAMBAR TETAP DI TENGAH */
+.img-box {
+    border: 5px solid #00c3ff;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: center;  /* pusatkan gambar */
+    margin: 0 auto;           /* pusatkan box */
+    width: max-content;       /* ukuran background putih tetap */
+}
+
+.img-box img {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 12px;
+}
+
+/* TEKS RATA KIRI */
+.epim-container h2,
+.epim-container p {
+    text-align: left;
+}
+
+.epim-container h2 {
+    margin-top: 35px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.epim-container p {
+    margin-top: 20px;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* TOMBOL DI POJOK KIRI ATAS */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    background-color: #00aaff;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.back-btn:hover {
+    background-color: #0088cc;
+}
+
+/* ---------------- HALAMAN TIF ---------------- */
+#tif-page {
+    position: relative; 
+    display: none;
+    padding-bottom: 50px;
+}
+
+.tif-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* GAMBAR TETAP DI TENGAH */
+.img-box {
+    border: 5px solid #00c3ff;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: center;  /* pusatkan gambar */
+    margin: 0 auto;           /* pusatkan box */
+    width: max-content;       /* ukuran background putih tetap */
+}
+
+.img-box img {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 12px;
+}
+
+/* TEKS RATA KIRI */
+.tif-container h2,
+.tif-container p {
+    text-align: left;
+}
+
+.tif-container h2 {
+    margin-top: 35px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.tif-container p {
+    margin-top: 20px;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* TOMBOL DI POJOK KIRI ATAS */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    background-color: #00aaff;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.back-btn:hover {
+    background-color: #0088cc;
+}
+
+/* ---------------- HALAMAN WEBINAR ---------------- */
+#webinar-page {
+    position: relative; 
+    display: none;
+    padding-bottom: 50px;
+}
+
+.webinar-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* GAMBAR TETAP DI TENGAH */
+.img-box {
+    border: 5px solid #00c3ff;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: center;  /* pusatkan gambar */
+    margin: 0 auto;           /* pusatkan box */
+    width: max-content;       /* ukuran background putih tetap */
+}
+
+.img-box img {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 12px;
+}
+
+/* TEKS RATA KIRI */
+.webinar-container h2,
+.webinar-container p {
+    text-align: left;
+}
+
+.webinar-container h2 {
+    margin-top: 35px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.webinar-container p {
+    margin-top: 20px;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* TOMBOL DI POJOK KIRI ATAS */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    background-color: #00aaff;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.back-btn:hover {
+    background-color: #0088cc;
+}
+
+/* ---------------- HALAMAN LKMM ---------------- */
+#lkmm-page {
+    position: relative; 
+    display: none;
+    padding-bottom: 50px;
+}
+
+.lkmm-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* GAMBAR TETAP DI TENGAH */
+.img-box {
+    border: 5px solid #00c3ff;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: center;  /* pusatkan gambar */
+    margin: 0 auto;           /* pusatkan box */
+    width: max-content;       /* ukuran background putih tetap */
+}
+
+.img-box img {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 12px;
+}
+
+/* TEKS RATA KIRI */
+.lkmm-container h2,
+.lkmm-container p {
+    text-align: left;
+}
+
+.lkmm-container h2 {
+    margin-top: 35px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.lkmm-container p {
+    margin-top: 20px;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* TOMBOL DI POJOK KIRI ATAS */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    background-color: #00aaff;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.back-btn:hover {
+    background-color: #0088cc;
+}
+
+
+</style>
+</head>
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+</head>
+
+<body>
+
+<!-- ===================== HALAMAN GALERI ===================== -->
+<div id="gallery-page">
+
+<header>
+    <img src="../assets/hmjti.png" alt="LogoHeader" width="60" height="60">
+    <div class="logo">HMJ TI</div>
+    <nav>
+      <a href="../pages/beranda.html">Beranda</a>
+        <a href="../pages/tentang.html">Tentang</a>
+        <a href="../pages/staf.html">Staf</a>
+        <a href="../pages/proker.html">Proker</a>
+        <a href="../pages/galeri.html">Galeri</a>
+    </nav>  
+</header>
+
+<section class="galeri-header">
+    <h2>Galeri HMJTI POLIJE</h2>
+    <div class="underline"></div>
+    <p>
+        Galeri HMJ TI Polije menyajikan dokumentasi berbagai kegiatan akademik, organisasi, dan event besar yang diselenggarakan oleh Himpunan Mahasiswa Jurusan Teknologi Informasi. Setiap foto dapat diklik untuk melihat informasi lengkap mengenai setiap kegiatan.
+    </p>
+</section>
+
+<div class="gallery-container">
+
+    <div class="card">
+        <img src="../assets/galeri/Galeri1.png">
+        <div class="card-title">AOM 10</div>
+        <div class="card-desc">Art of Manunggaling</div>
+        <button onclick="openAOM()">READ MORE</button>
+    </div>
+
+    <div class="card">
+        <img src="../assets/galeri/Galeri2.png">
+        <div class="card-title">EPIM 2025</div>
+        <div class="card-desc">Expo Dan Pekan Ilmiah Mahasiswa</div>
+        <button onclick="openEPIM()">READ MORE</button>
+    </div>
+
+    <div class="card">
+        <img src="../assets/galeri/Galeri3.png">
+        <div class="card-title">LKMM Pra-TZ</div>
+        <div class="card-desc">Pelatihan kepemimpinan</div>
+        <button onclick="openLKMM()"> READ MORE</button>
+    </div>
+
+    <div class="card">
+        <img src="../assets/galeri/Galeri4.png">
+        <div class="card-title">Webinar Big Data & AI</div>
+        <div class="card-desc">Pengenalan teknologi AI</div>
+        <button onclick="openWEBINAR()">READ MORE</button>
+    </div>
+
+    <div class="card">
+        <img src="../assets/galeri/Galeri5.png">
+        <div class="card-title">TIF Exhibition</div>
+        <div class="card-desc">Pameran Inovasi Mahasiswa</div>
+        <button onclick="openTIF()">READ MORE</button>
+    </div>
+
+</div>
+
+
+</div> <!-- footer -->
+    
+<!-- ===================== HALAMAN AOM ===================== -->
+<div id="aom-page">
+
+<div class="aom-container">
+
+
+    
+
+    <div class="img-box">
+        <img src="../assets/galeri/Halaman1.png">
+    </div>
+
+    <p>
+    Art of Manunggalan (AOM) adalah salah satu acara terbesar dan paling ditunggu dalam rangkaian kegiatan HMJ TI Politeknik Negeri Jember. AOM menjadi ajang penutupan kemeriahan rangkaian EPIM dan diadakan setiap tahun sebagai bentuk apresiasi untuk seluruh mahasiswa TI
+    </p>
+
+    <h2>Konsep Acara</h2>
+    <p>
+AOM mengusung konsep pertunjukan seni dan hiburan modern yang memadukan:
+Pentas seni mahasiswa (band kampus, tari, musik akustik, stand-up comedy)
+Persembahan dari UKM atau komunitas kampus
+Guest star nasional yang menjadi puncak acara
+Visual panggung kreatif dengan lighting, multimedia, dan efek cahaya
+Penghargaan terhadap panitia & peserta kegiatan EPIM
+    </p>
+
+    <h2>Tujuan AOM</h2>
+    <p>
+Menghadirkan hiburan bagi seluruh mahasiswa TI setelah mengikuti rangkaian kegiatan akademik dan kepanitiaan.
+Menjadi sarana apresiasi terhadap kreativitas mahasiswa.
+Membangun rasa kebersamaan dan solidaritas dalam lingkup HMJ TI.
+Memperkenalkan identitas TI melalui pertunjukan seni dan budaya.
+    </p>
+
+    <h2>Sasaran Peserta</h2>
+    <p>Mahasiswa TI aktif, Alumni TI, Dosen & Civitas Akademik, Mahasiswa Umum Polije</p>
+
+    <h2>Kesan & Dampak</h2>
+    <p>
+    AOM telah menjadi simbol identitas mahasiswa TI karena selalu menghasilkan pengalaman memorable melalui atmosfer acara yang meriah, dekorasi penuh warna, dan performa spektakuler dari mahasiswa maupun guest star.
+    </p>
+
+</div>
+
+<button class="back-btn" onclick="backToGallery()">← Kembali ke Galeri</button>
+
+
+</div>
+
+
+</div> <!-- footer -->
+
+<!-- ===================== HALAMAN EPIM ===================== -->
+<div id="epim-page">
+
+<div class="epim-container">
+
+    
+
+    <div class="img-box">
+        <img src="../assets/galeri/Halaman2.png">
+    </div>
+
+    <p>
+   EPIM (Expo & Pekan Ilmiah Mahasiswa) adalah salah satu program unggulan HMJ TI Polije yang diselenggarakan untuk menampilkan karya teknologi, melakukan seminar edukatif, serta mengadakan perlombaan akademik antar-mahasiswa.
+EPIM biasanya berlangsung selama beberapa hari dengan agenda yang padat dan terstruktur.
+Rangkaian Kegiatan EPIM
+    </p>
+
+    <h2>Expo projeck mahasiswa</h2>
+    <p>
+Menampilkan produk project PBL, aplikasi mobile, website, IoT, UI/UX, dan digital art.
+Stand expo dibuat seperti pameran profesional lengkap dengan poster, demo live, dan presentasi.
+Setiap kelompok menjelaskan proses pembuatan, problem solving, dan manfaat produk.
+    </p>
+
+    <h2>Seminar & workshop</h2>
+    <p>
+Menghadirkan pembicara profesional dari industri TI.
+Materi yang sering dibawakan: AI, Data Science, Web Development, UI/UX, Cyber Security, Startup, dan Cloud Computing.
+Memberi wawasan baru sekaligus membuka peluang networking.
+    </p>
+
+    <h2>Lomba lomba akademik</h2>
+    <p>Lomba desain UI/UX
+Lomba programming / CP
+Lomba poster / infografis
+E-sport (jika masuk agenda)
+Lomba inovasi teknologi
+Setiap peserta mendapatkan penilaian dari juri internal dan eksternal yang berkompeten.</p>
+
+    <h2>penilaian dan penghargaan</h2>
+    <p>
+    Tim terbaik dari expo mendapatkan kategori seperti Best Innovation, Best UI/UX, Best Presentation, dan sebagainya.
+Pemenang lomba diumumkan pada malam penutupan.
+    </p>
+
+</div>
+
+<button class="back-btn" onclick="backToGallery()">← Kembali ke Galeri</button>
+
+
+</div>
+
+
+</div> <!-- footer -->
+
+<!-- ===================== HALAMAN LKMM ===================== -->
+<div id="lkmm-page">
+
+<div class="lkmm-container">
+
+    
+
+    <div class="img-box">
+        <img src="../assets/galeri/Halaman3.png">
+    </div>
+
+    <p>
+   LKMM Pra-TD adalah pelatihan yang dikhususkan bagi mahasiswa tingkat awal untuk meningkatkan kemampuan organisasi dan kepemimpinan sebelum terjun ke dunia kepanitiaan atau kepengurusan.
+    </p>
+
+    <h2>Materi pelatihan</h2>
+    <p>
+Manajemen waktu
+Manajemen konflik
+Teknik memimpin rapat
+Komunikasi efektif
+Public speaking
+Teamwork & problem solving
+Etika organisasi mahasiswa
+
+    </p>
+
+    <h2>Kegiatan di lapangan</h2>
+    <p>
+Ice breaking
+Diskusi kelompok
+Studi kasus
+Simulasi organisasi
+Presentasi kelompok
+Evaluasi dan refleksi.
+    </p>
+
+    <h2>Tujuan LKMM pra td</h2>
+    <p>Mempersiapkan mahasiswa menjadi calon pengurus yang kompeten.
+Mengasah kemampuan berbicara dan menyampaikan pendapat.
+Menanamkan kedisiplinan, tanggung jawab, dan etika organisasi.
+Membangun karakter kepemimpinan sejak dini.</p>
+
+</div>
+
+<button class="back-btn" onclick="backToGallery()">← Kembali ke Galeri</button>
+
+
+</div>
+
+</div> <!-- footer -->
+
+<!-- ===================== HALAMAN WEBINAR ===================== -->
+<div id="webinar-page">
+
+<div class="webinar-container">
+
+    
+
+    <div class="img-box">
+        <img src="../assets/galeri/Halaman4.png">
+    </div>
+
+    <p>
+   Acara ini merupakan webinar tingkat jurusan yang diselenggarakan HMJ TI untuk memberikan wawasan mendalam tentang perkembangan teknologi terbaru.
+    </p>
+
+    <h2>isi webinar</h2>
+    <p>
+Pengenalan Big Data dan konsep Data Engineering.
+Dasar Machine Learning dan implementasinya.
+Studi kasus real industry (rekomendasi produk, analisis data, AI dalam bisnis).
+Demo tools seperti Python, TensorFlow, Power BI, atau Google Cloud.
+Sesi tanya jawab interaktif.
+
+    </p>
+
+    <h2>Target peserta</h2>
+    <p>
+Mahasiswa Data Science, TI, dan SI
+Mahasiswa umum yang berminat AI
+Alumni TI
+Masyarakat umum
+    </p>
+
+    <h2>Manfaat webinar</h2>
+    <p>Menambah wawasan akademik dan praktis.
+Memberikan gambaran karier di bidang data dan AI.
+Menghubungkan mahasiswa dengan praktisi industri.</p>
+
+</div>
+
+<button class="back-btn" onclick="backToGallery()">← Kembali ke Galeri</button>
+
+
+
+</div> <!-- footer -->
+
+<!-- ===================== HALAMAN TIF ===================== -->
+<div id="tif-page">
+
+<div class="tif-container">
+
+    
+
+    <div class="img-box">
+        <img src="../assets/galeri/Halaman5.png">
+    </div>
+
+    <p>
+   TIF Exhibition adalah pameran khusus yang bertujuan menampilkan berbagai project mata kuliah, tugas akhir, maupun karya mandiri mahasiswa Teknik Informatika.
+    </p>
+
+    <h2>Jenis karya yg di tampilkan</h2>
+    <p>
+Aplikasi mobile Android atau iOS
+Website fungsional
+UI/UX (interface design)
+Video animasi atau motion graphic
+Game project 2D/3D
+Prototype IoT (sensor, smart device, robot mini)
+Sistem informasi berbasis database
+AI/ML mini project (face detection, classification, chatbot sederhana)
+
+    </p>
+
+    <h2>kegiatan dalam Exhibition</h2>
+    <p>
+Mahasiswa mempresentasikan karya di depan dosen dan pengunjung.
+Setiap stand dilengkapi poster, demo, dan dokumentasi.
+Dosen memberikan masukan dan evaluasi.
+Foto dokumentasi berfokus pada interaksi mahasiswa–pengunjung, proses demo, dan suasana expo.
+    </p>
+
+    <h2>Lomba lomba akademik</h2>
+    <p>Lomba desain UI/UX
+Lomba programming / CP
+Lomba poster / infografis
+E-sport (jika masuk agenda)
+Lomba inovasi teknologi
+Setiap peserta mendapatkan penilaian dari juri internal dan eksternal yang berkompeten.</p>
+
+    <h2>Tujuan</h2>
+    <p>
+    Melatih komunikasi dan presentasi.
+Memberikan pengalaman nyata menampilkan karya teknologi.
+Mengukur sejauh mana pemahaman mahasiswa terhadap materi kuliah.
+Membantu mahasiswa membangun portofolio profesional.
+    </p>
+
+</div>
+
+<button class="back-btn" onclick="backToGallery()">← Kembali ke Galeri</button>
+ 
+
+
+</div>
+
+ <footer>
+      <div class="footer-main">
+        <div class="footer-banner">
+          <!-- Kolom 1: Logo & Deskripsi -->
+          <div class="footer-col footer-left">
+            <div class="footer-logo">
+              <img class="footerImg" src="../assets/hmjti.png" alt="Footer Logo" />
+              <h1 class="footer-title">HMJ TI</h1>
+            </div>
+            <p class="footer-desc">
+              Himpunan Mahasiswa Jurusan Teknologi Informasi (HMJ TI) merupakan
+              organisasi kemahasiswaan di Politeknik Negeri Jember yang menaungi
+              mahasiswa dan alumni Jurusan Teknologi Informasi Politeknik Negeri
+              Jember.<br/>
+              Bersinergi dari hati, berdedikasi untuk TI<br/>
+              #TI!PC!!!
+            </p>
+          </div>
+
+          <!-- Kolom 2: Office -->
+          <div class="footer-col footer-office">
+            <h3>Office</h3>
+            <p class="office-name">Politeknik Negeri Jember</p>
+            <p class="office-address">
+              Jl. Mastrip PO.BOX 164 Jember,<br/>
+              Jawa Timur 68101 Indonesia
+            </p>
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:‪+62331333532‬" class="footer-phone"
+                >‪(+62) 331-333532‬</a
+              >
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:jti@polije.ac.id" class="footer-email"
+                >jti@polije.ac.id</a
+              >
+            </p>
+          </div>
+
+          <!-- Kolom 3: Links -->
+          <div class="footer-col footer-links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="../pages/beranda.html">Beranda</a></li>
+              <li><a href="../pages/tentang.html">Tentang</a></li>
+              <li><a href="../pages/staf.html">Staf</a></li>
+              <li><a href="../pages/proker.html">Proker</a></li>
+              <li><a href="../pages/galeri.html">Galeri</a></li>
+            </ul>
+          </div>
+
+          <!-- Kolom 4: Social Media -->
+          <div class="footer-col footer-right">
+            <h3>Follow Us On</h3>
+            <a
+              href="https://www.instagram.com/hmjti_polije"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a
+              href="https://www.tiktok.com/@hmjti_polije"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-tiktok"></i>
+              <span>TikTok</span>
+            </a>
+            <a
+              href="https://www.youtube.com/c/hmjti_polije"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-youtube"></i>
+              <span>YouTube</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-container">
+          <p>&copy; 2025 HMJ TI POLIJE. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+<script>
+
+function openAOM() {
+    document.getElementById("gallery-page").style.display = "none";
+    document.getElementById("aom-page").style.display = "block";
+    window.scrollTo(0,0);
+}
+ 
+function openEPIM() {
+    document.getElementById("gallery-page").style.display = "none";
+    document.getElementById("epim-page").style.display = "block";
+    window.scrollTo(0,0);
+}
+
+function openTIF() {
+  document.getElementById("gallery-page").style.display = "none";
+  document.getElementById("tif-page").style.display = "block";
+  window.scrollTo(0,0);
+}
+
+function openWEBINAR() {
+  document.getElementById("gallery-page").style.display = "none";
+  document.getElementById("webinar-page").style.display = "block";
+  window.scrollTo(0,0);
+}
+
+function openLKMM() {
+  document.getElementById("gallery-page").style.display = "none";
+  document.getElementById("lkmm-page").style.display = "block";
+  window.scrollTo(0,0);
+}
+function backToGallery() {
+  document.getElementById("gallery-page").style.display = "block";
+  document.getElementById("aom-page").style.display = "none";
+  document.getElementById("epim-page").style.display = "none";
+  document.getElementById("tif-page").style.display = "none";
+  document.getElementById("webinar-page").style.display = "none";
+  document.getElementById("lkmm-page").style.display = "none";
+  window.scrollTo(0,0);
+}
+
+</script>
+
+</body>
+

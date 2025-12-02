@@ -1,0 +1,606 @@
+header {
+  background-color: rgba(0, 8, 20, 0.8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 6px;
+  position: sticky;
+  top: 0%;
+  z-index: 1000;
+  height: 64px;
+  backdrop-filter: blur(10px);
+}
+
+header img {
+  position: absolute;
+  left: 10px;
+}
+
+header .logo {
+  position: absolute;
+  left: 80px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  gap: 40px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #22d3ee;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  bottom: 0;
+  background: #0f172ade;
+  color: #fff;
+  padding: 50px 0 20px;
+  border-top-left-radius: 0px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.footer-main {
+  width: 85%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.footer-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 35px;
+  margin-bottom: 25px;
+}
+
+/* Kolom Footer */
+.footer-col {
+  flex: 1;
+}
+
+/* Kolom 1: Logo & Deskripsi */
+.footer-left {
+  flex: 1.6;
+  padding-right: 15px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 5px;
+}
+
+.footerImg {
+  width: 45px;
+  height: 45px;
+}
+
+.footer-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.footer-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+  color: #ddd;
+  text-align: justify;
+}
+
+/* Kolom 2: Office */
+.footer-office h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.footer-office .office-name {
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.footer-office .office-address {
+  margin: 0 0 12px 0;
+  line-height: 1.6;
+  font-size: 13px;
+  color: #ddd;
+}
+
+.footer-office p {
+  margin: 8px 0;
+  line-height: 1.6;
+  font-size: 13px;
+  color: #ddd;
+}
+
+.footer-office p strong {
+  color: #fff;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.footer-phone {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-phone:hover {
+  color: #fff;
+}
+
+.footer-email {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-email:hover {
+  color: #fff;
+}
+
+/* Kolom 3: Links */
+.footer-links h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links ul li a {
+  color: #b8b8d8;
+  text-decoration: none;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+  font-size: 13px;
+  line-height: 1.6;
+  display: inline-block;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+  padding-left: 5px;
+}
+
+/* Kolom 4: Social Media */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.footer-right h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+}
+
+.footer-right .social-link {
+  color: #1a1a2e;
+  background: #fff;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  min-width: 150px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-right .social-link i {
+  font-size: 1.1rem;
+}
+
+.footer-right .social-link span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.footer-right .social-link:hover {
+  transform: translateY(-3px);
+  background: #f5f5f5;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.15);
+}
+
+/* Copyright */
+.footer-container {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(253, 251, 251, 0.623);
+}   
+
+.footer-container p {
+  margin: 0;
+  color: #bbb;
+  font-size: 13px;
+}
+
+
+/* RESPONSIVE DESIGN - MEDIA QUERIES */
+
+/* Tablet - Landscape (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .footer-main {
+    width: 90%;
+  }
+
+  .footer-banner {
+    gap: 25px;
+  }
+
+  .footer-left {
+    flex: 1.4;
+  }
+
+  .footer-right .social-link {
+    min-width: 140px;
+    padding: 9px 16px;
+  }
+}
+
+/* Tablet - Portrait (max-width: 768px) */
+@media (max-width: 768px) {
+  footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer-main {
+    width: 92%;
+  }
+
+  .footer-banner {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  /* Kolom 1 dan 2: Full Width */
+  .footer-left,
+  .footer-office {
+    flex: 1 1 100%;
+    padding-right: 0;
+  }
+
+  /* Kolom 3 dan 4: Side by Side (50% each) */
+  .footer-links,
+  .footer-right {
+    flex: 1 1 45%;
+  }
+
+  .footer-right {
+    align-items: flex-start;
+  }
+
+  .footer-right .social-link {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .footer-desc {
+    text-align: left;
+  }
+
+  .footer-title {
+    font-size: 1.4rem;
+  }
+
+  .footer-office h3,
+  .footer-links h3,
+  .footer-right h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+}
+
+/* Mobile - Large (max-width: 576px) */
+@media (max-width: 576px) {
+  footer {
+    padding: 30px 0 15px;
+  }
+
+  .footer-main {
+    width: 95%;
+  }
+
+  .footer-banner {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* Semua kolom jadi full width */
+  .footer-col {
+    flex: 1 1 100%;
+  }
+
+  .footer-left,
+  .footer-office,
+  .footer-links,
+  .footer-right {
+    flex: 1 1 100%;
+    padding-right: 0;
+  }
+
+  .footer-logo {
+    gap: 10px;
+  }
+
+  .footerImg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-title {
+    font-size: 1.3rem;
+  }
+
+  .footer-desc {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .footer-office h3,
+  .footer-links h3,
+  .footer-right h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .footer-office .office-name,
+  .footer-office .office-address,
+  .footer-office p {
+    font-size: 12px;
+  }
+
+  .footer-links ul li a {
+    font-size: 12px;
+  }
+
+  .footer-right {
+    align-items: stretch;
+  }
+
+  .footer-right .social-link {
+    width: 100%;
+    padding: 12px 18px;
+    justify-content: flex-start;
+  }
+
+  .footer-container {
+    margin-top: 20px;
+    padding-top: 15px;
+  }
+
+  .footer-container p {
+    font-size: 11px;
+  }
+}
+
+/* Mobile - Small (max-width: 375px) */
+@media (max-width: 375px) {
+  .footer-main {
+    width: 93%;
+  }
+
+  .footer-title {
+    font-size: 1.2rem;
+  }
+
+  .footer-desc {
+    font-size: 11px;
+  }
+
+  .footer-right .social-link {
+    padding: 10px 15px;
+    font-size: 0.85rem;
+  }
+
+  .footer-right .social-link span {
+    font-size: 12px;
+  }
+}
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+        to bottom,
+        #000814 0%,
+        #001025 50%,
+        #003C8B 100%
+    );
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: white;
+  margin: 0;
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+/* GRID CONTAINER */
+.news-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+/* CARD */
+.card {
+  background: #061527;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #15345c;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  
+  /* Tambahkan flexbox untuk membuat layout vertikal */
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 14px;
+  color: #d4d4d4;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  background: #1a80ff;
+  color: white;
+  padding: 10px 28px;
+  border-radius: 22px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+  margin-top: auto; /* Mendorong tombol ke bawah */
+}
+
+.btn:hover {
+  background: #0e5bb8;
+}
+
+/* Modal Style */
+.modal {
+  display: none;
+}
+
+.modal.active {
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-image: linear-gradient(to bottom, #001025, #003c8b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 64px;
+  gap: 24px;
+  border-radius: 24px;
+}
+
+.modalImg {
+  height: 248px;
+  width: auto;
+  border-radius: 6px;
+}
+
+.modalParagraph {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 0.8em;
+  max-width: 486px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .news-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .news-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ANIMASI MASUK DARI KIRI */
+.fade-slide {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: 2.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.fade-slide.show {
+  opacity: 1;
+  transform: translateX(0);
+}
