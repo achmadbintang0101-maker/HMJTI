@@ -31,7 +31,7 @@ header {
   top: 0%;
   z-index: 1000;
   height: 64px;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
 }
 
 header img {
@@ -57,12 +57,12 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #22d3ee;
+  color: #22d3ee;
 }
 
 /* Judul */
 .judul {
-  background-color: #1e293b;
+  background-color: #001025;
   align-items: center;
   justify-content: center;
   min-height: 130px;

@@ -270,8 +270,8 @@
 .hero-section {
     position: relative;
     height: 500px;
-    background-image: url('assets/tentang/background.jpeg'); /* Ganti dengan path gambar gedung Anda */
     background-size: cover;
+    background-image: url('../assets/tentang/background.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -304,7 +304,7 @@
 .hero-section {
     position: relative;
     height: 500px;
-    background-image: url('assets/tentang/background.jpeg'); /* Ganti dengan path gambar gedung Anda */
+   background-image: url('../assets/tentang/background.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -646,7 +646,7 @@
     }
 
     .sejarah-section h2 {
-        color: var(--secondary-color); /* Diubah ke secondary-color agar terlihat */
+        color: #ffffff;
         margin-bottom: 20px;
     }
 
@@ -710,7 +710,7 @@
 
     .lokasi-section h2 {
         margin-bottom: 20px;
-        color: var(--secondary-color);
+        color: #ffffff;
     }
 
     .map-placeholder {
