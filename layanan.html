@@ -1,0 +1,165 @@
+<!-- ========== HTML FILE (index.html) ========== -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan</title>
+    <link rel="stylesheet" href="./styles/layanan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER ANDA DI SINI -->
+
+<!-- Navbar -->
+    <header>
+      <img src="./assets/hmjti.png" alt="LogoHeader" width="60" height="60" />
+      <div class="logo">HMJ-TI</div>
+      <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Tentang</a>
+        <a href="#">Staf</a>
+        <a href="#">Proker</a>
+        <a href="#">Galeri</a>
+      </nav>
+    </header>
+
+    <section class="layanan-section">
+        <h1 class="layanan-title">LAYANAN</h1>
+        
+        <div class="layanan-container">
+            <!-- TI Care Card -->
+            <div class="layanan-card" data-service="ti-care">
+                <svg class="card-icon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M100,170 C100,170 30,120 30,80 C30,50 50,30 70,30 C85,30 95,40 100,50 C105,40 115,30 130,30 C150,30 170,50 170,80 C170,120 100,170 100,170 Z" fill="#8b5cf6"/>
+                    <g transform="translate(60, 65)">
+                        <rect x="0" y="15" width="30" height="12" rx="3" fill="#3b82f6"/>
+                        <circle cx="8" cy="21" r="4" fill="#3b82f6"/>
+                        <rect x="50" y="15" width="30" height="12" rx="3" fill="#1e40af"/>
+                        <circle cx="72" cy="21" r="4" fill="#1e40af"/>
+                        <rect x="28" y="18" width="24" height="6" fill="#60a5fa"/>
+                    </g>
+                </svg>
+                <h2 class="card-title">TI care</h2>
+                <div class="card-shine"></div>
+            </div>
+
+            <!-- Aspirasi Center Card -->
+            <div class="layanan-card" data-service="aspirasi">
+                <svg class="card-icon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M100,30 L110,70 L150,70 L120,95 L130,135 L100,110 L70,135 L80,95 L50,70 L90,70 Z" fill="#fbbf24" class="star"/>
+                    <g transform="translate(70, 90)">
+                        <circle cx="30" cy="10" r="12" fill="#0066cc"/>
+                        <ellipse cx="30" cy="35" rx="15" ry="20" fill="#0066cc"/>
+                        <path d="M20,25 Q15,15 20,5" stroke="#0066cc" stroke-width="6" fill="none" stroke-linecap="round"/>
+                        <path d="M40,25 L45,30" stroke="#0066cc" stroke-width="6" fill="none" stroke-linecap="round"/>
+                        <path d="M25,50 L20,70" stroke="#0066cc" stroke-width="6" fill="none" stroke-linecap="round"/>
+                        <path d="M35,50 L40,70" stroke="#0066cc" stroke-width="6" fill="none" stroke-linecap="round"/>
+                        <path d="M10,35 Q0,35 -5,40" stroke="#60a5fa" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+                        <path d="M10,45 Q-5,45 -10,50" stroke="#60a5fa" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+                    </g>
+                </svg>
+                <h2 class="card-title">Aspirasi<br>Center</h2>
+                <div class="card-shine"></div>
+            </div>
+        </div>
+
+        <!-- Floating particles -->
+        <div class="particles"></div>
+    </section>
+
+    <!-- FOOTER ANDA DI SINI -->
+      <!-- footer -->
+    <footer>
+      <div class="footer-main">
+        <div class="footer-banner">
+          <!-- Kolom 1: Logo & Deskripsi -->
+          <div class="footer-col footer-left">
+            <div class="footer-logo">
+              <img class="footerImg" src="Logo1.1.png" alt="Footer Logo" />
+              <h1 class="footer-title">HMJ TI</h1>
+            </div>
+            <p class="footer-desc">
+              Himpunan Mahasiswa Jurusan Teknologi Informasi (HMJ TI) merupakan
+              organisasi kemahasiswaan di Politeknik Negeri Jember yang menaungi
+              mahasiswa dan alumni Jurusan Teknologi Informasi Politeknik Negeri
+              Jember.<br />
+              Bersinergi dari hati, berdedikasi untuk TI<br />
+              #TI!PC!!!
+            </p>
+          </div>
+
+          <!-- Kolom 2: Office -->
+          <div class="footer-col footer-office">
+            <h3>Office</h3>
+            <p class="office-name">Politeknik Negeri Jember</p>
+            <p class="office-address">
+              Jl. Mastrip PO.BOX 164 Jember,<br />
+              Jawa Timur 68101 Indonesia
+            </p>
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:+62331333532" class="footer-phone"
+                >(+62) 331-333532</a
+              >
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:jti@polije.ac.id" class="footer-email"
+                >jti@polije.ac.id</a
+              >
+            </p>
+          </div>
+
+          <!-- Kolom 3: Links -->
+          <div class="footer-col footer-links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#">Beranda</a></li>
+              <li><a href="#">Tentang</a></li>
+              <li><a href="#">Staf</a></li>
+              <li><a href="#" id="prokerLink">Proker</a></li>
+              <li><a href="#">Galeri</a></li>
+            </ul>
+          </div>
+
+          <!-- Kolom 4: Social Media -->
+          <div class="footer-col footer-right">
+            <h3>Follow Us On</h3>
+            <a
+              href="https://www.instagram.com/hmjti_polije"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a
+              href="https://www.tiktok.com/@hmjti_polije"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-tiktok"></i>
+              <span>TikTok</span>
+            </a>
+            <a
+              href="https://www.youtube.com/c/hmjti_polije"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-youtube"></i>
+              <span>YouTube</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-container">
+          <p>&copy; 2025 HMJ TI POLIJE. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="layanan.js"></script>
+</body>
+</html>

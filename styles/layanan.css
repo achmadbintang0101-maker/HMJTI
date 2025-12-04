@@ -1,0 +1,729 @@
+header {
+  background-color: rgba(0, 8, 20, 0.8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 6px;
+  position: sticky;
+  top: 0%;
+  z-index: 1000;
+  height: 64px;
+  backdrop-filter: blur(10px);
+}
+
+header img {
+  position: absolute;
+  left: 10px;
+}
+
+header .logo {
+  position: absolute;
+  left: 80px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  gap: 40px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #22d3ee;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  bottom: 0;
+  background: #0f172ade;
+  color: #fff;
+  padding: 50px 0 20px;
+  border-top-left-radius: 0px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.footer-main {
+  width: 85%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.footer-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 35px;
+  margin-bottom: 25px;
+}
+
+/* Kolom Footer */
+.footer-col {
+  flex: 1;
+}
+
+/* Kolom 1: Logo & Deskripsi */
+.footer-left {
+  flex: 1.6;
+  padding-right: 15px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 5px;
+}
+
+.footerImg {
+  width: 45px;
+  height: 45px;
+}
+
+.footer-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.footer-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+  color: #ddd;
+  text-align: justify;
+}
+
+/* Kolom 2: Office */
+.footer-office h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.footer-office .office-name {
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.footer-office .office-address {
+  margin: 0 0 12px 0;
+  line-height: 1.6;
+  font-size: 13px;
+  color: #ddd;
+}
+
+.footer-office p {
+  margin: 8px 0;
+  line-height: 1.6;
+  font-size: 13px;
+  color: #ddd;
+}
+
+.footer-office p strong {
+  color: #fff;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.footer-phone {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-phone:hover {
+  color: #fff;
+}
+
+.footer-email {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-email:hover {
+  color: #fff;
+}
+
+/* Kolom 3: Links */
+.footer-links h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links ul li a {
+  color: #b8b8d8;
+  text-decoration: none;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+  font-size: 13px;
+  line-height: 1.6;
+  display: inline-block;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+  padding-left: 5px;
+}
+
+/* Kolom 4: Social Media */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.footer-right h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+}
+
+.footer-right .social-link {
+  color: #1a1a2e;
+  background: #fff;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  min-width: 150px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-right .social-link i {
+  font-size: 1.1rem;
+}
+
+.footer-right .social-link span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.footer-right .social-link:hover {
+  transform: translateY(-3px);
+  background: #f5f5f5;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.15);
+}
+
+/* Copyright */
+.footer-container {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(253, 251, 251, 0.623);
+}   
+
+.footer-container p {
+  margin: 0;
+  color: #bbb;
+  font-size: 13px;
+}
+
+
+/* RESPONSIVE DESIGN - MEDIA QUERIES */
+
+/* Tablet - Landscape (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .footer-main {
+    width: 90%;
+  }
+
+  .footer-banner {
+    gap: 25px;
+  }
+
+  .footer-left {
+    flex: 1.4;
+  }
+
+  .footer-right .social-link {
+    min-width: 140px;
+    padding: 9px 16px;
+  }
+}
+
+/* Tablet - Portrait (max-width: 768px) */
+@media (max-width: 768px) {
+  footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer-main {
+    width: 92%;
+  }
+
+  .footer-banner {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  /* Kolom 1 dan 2: Full Width */
+  .footer-left,
+  .footer-office {
+    flex: 1 1 100%;
+    padding-right: 0;
+  }
+
+  /* Kolom 3 dan 4: Side by Side (50% each) */
+  .footer-links,
+  .footer-right {
+    flex: 1 1 45%;
+  }
+
+  .footer-right {
+    align-items: flex-start;
+  }
+
+  .footer-right .social-link {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .footer-desc {
+    text-align: left;
+  }
+
+  .footer-title {
+    font-size: 1.4rem;
+  }
+
+  .footer-office h3,
+  .footer-links h3,
+  .footer-right h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+}
+
+/* Mobile - Large (max-width: 576px) */
+@media (max-width: 576px) {
+  footer {
+    padding: 30px 0 15px;
+  }
+
+  .footer-main {
+    width: 95%;
+  }
+
+  .footer-banner {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* Semua kolom jadi full width */
+  .footer-col {
+    flex: 1 1 100%;
+  }
+
+  .footer-left,
+  .footer-office,
+  .footer-links,
+  .footer-right {
+    flex: 1 1 100%;
+    padding-right: 0;
+  }
+
+  .footer-logo {
+    gap: 10px;
+  }
+
+  .footerImg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-title {
+    font-size: 1.3rem;
+  }
+
+  .footer-desc {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .footer-office h3,
+  .footer-links h3,
+  .footer-right h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .footer-office .office-name,
+  .footer-office .office-address,
+  .footer-office p {
+    font-size: 12px;
+  }
+
+  .footer-links ul li a {
+    font-size: 12px;
+  }
+
+  .footer-right {
+    align-items: stretch;
+  }
+
+  .footer-right .social-link {
+    width: 100%;
+    padding: 12px 18px;
+    justify-content: flex-start;
+  }
+
+  .footer-container {
+    margin-top: 20px;
+    padding-top: 15px;
+  }
+
+  .footer-container p {
+    font-size: 11px;
+  }
+}
+
+/* Mobile - Small (max-width: 375px) */
+@media (max-width: 375px) {
+  .footer-main {
+    width: 93%;
+  }
+
+  .footer-title {
+    font-size: 1.2rem;
+  }
+
+  .footer-desc {
+    font-size: 11px;
+  }
+
+  .footer-right .social-link {
+    padding: 10px 15px;
+    font-size: 0.85rem;
+  }
+
+  .footer-right .social-link span {
+    font-size: 12px;
+  }
+}
+
+/* ========== SECTION LAYANAN ========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+        to bottom,
+        #000814 0%,
+        #001025 50%,
+        #003C8B 100%
+    );
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: white;
+  margin: 0;
+}
+
+.layanan-section {
+    padding: 60px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.layanan-title {
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: fadeInDown 1s ease forwards;
+    text-shadow: 0 4px 10px rgba(0, 168, 255, 0.3);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.layanan-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    z-index: 10;
+}
+
+/* CARD STYLING - FIXED SIZE */
+.layanan-card {
+    background-color: white;
+    border: 3px solid #00a8ff;
+    border-radius: 20px;
+    padding: 50px 40px;
+    width: 380px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.layanan-card:nth-child(1) {
+    animation: fadeInUp 0.8s ease 0.3s forwards;
+    border-color: #fbbf24;
+}
+
+.layanan-card:nth-child(2) {
+    animation: fadeInUp 0.8s ease 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.layanan-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 168, 255, 0.4);
+}
+
+.layanan-card:nth-child(1):hover {
+    border-color: #fbbf24;
+}
+
+.layanan-card:nth-child(2):hover {
+    border-color: #fbbf24;
+}
+
+.layanan-card:active {
+    transform: translateY(-10px) scale(1.02);
+}
+
+/* Shine effect */
+.card-shine {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 70%
+    );
+    transform: rotate(45deg);
+    transition: all 0.6s;
+    opacity: 0;
+}
+
+.layanan-card:hover .card-shine {
+    left: 100%;
+    opacity: 1;
+}
+
+/* ICON STYLING - BIGGER SIZE */
+.card-icon {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+    transition: transform 0.4s ease;
+}
+
+.layanan-card:hover .card-icon {
+    transform: scale(1.1) rotate(5deg);
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1.1) rotate(5deg) translateY(0);
+    }
+    50% {
+        transform: scale(1.1) rotate(5deg) translateY(-10px);
+    }
+}
+
+/* Star animation for Aspirasi Center */
+.layanan-card[data-service="aspirasi"]:hover .star {
+    animation: starPulse 0.8s ease infinite;
+}
+
+@keyframes starPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+/* TITLE STYLING - CONSISTENT HEIGHT */
+.card-title {
+    color: #0066cc;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    transition: color 0.3s ease;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layanan-card:hover .card-title {
+    color: #00a8ff;
+    text-shadow: 0 2px 8px rgba(0, 168, 255, 0.3);
+}
+
+/* Floating particles */
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.particle {
+    position: absolute;
+    background: rgba(0, 168, 255, 0.4);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: float linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) scale(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) scale(1);
+        opacity: 0;
+    }
+}
+
+/* Pulse animation on page load */
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        box-shadow: 0 5px 30px rgba(0, 168, 255, 0.5);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .layanan-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .layanan-container {
+        gap: 30px;
+    }
+
+    .layanan-card {
+        width: 300px;
+        height: 380px;
+        padding: 40px 30px;
+    }
+
+    .card-icon {
+        width: 120px;
+        height: 120px;
+    }
+
+    .card-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .layanan-card {
+        width: 280px;
+        height: 360px;
+        padding: 35px 25px;
+    }
+
+    .card-icon {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        font-size: 26px;
+    }
+}

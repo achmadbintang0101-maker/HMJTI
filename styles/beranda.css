@@ -30,7 +30,9 @@ header {
 header img {
   position: absolute;
   left: 10px;
-  background-color: transparent ;
+  background-color: transparent;
+  height: 60px;
+  width: 60px;
 }
 
 header .logo {

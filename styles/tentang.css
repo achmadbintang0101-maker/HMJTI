@@ -270,7 +270,7 @@
 .hero-section {
     position: relative;
     height: 500px;
-    background-image: url('background.jpeg'); /* Ganti dengan path gambar gedung Anda */
+    background-image: url('assets/tentang/background.jpeg'); /* Ganti dengan path gambar gedung Anda */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -304,7 +304,7 @@
 .hero-section {
     position: relative;
     height: 500px;
-    background-image: url('background.jpeg'); /* Ganti dengan path gambar gedung Anda */
+    background-image: url('assets/tentang/background.jpeg'); /* Ganti dengan path gambar gedung Anda */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -620,10 +620,11 @@
 
     .content-box {
         flex: 1;
+        text-align: center;
     }
 
-    .content-box h2 {
-        color: var(--secondary-color);
+   .content-box h2 {
+        color: white;
         margin-bottom: 15px;
     }
 
