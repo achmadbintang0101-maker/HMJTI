@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beranda HMJTI POLIJE</title>
+    <title>Beranda HMJ TI POLIJE</title>
     <link rel="stylesheet" href="./styles/beranda.css" />
     <link
       rel="stylesheet"
@@ -13,7 +13,7 @@
   <body>
     <!-- Navbar -->
     <header>
-      <img src="./assets/beranda/Logo1.1.png" alt="Logo HMJ TI" />
+      <img src="./assets/hmjti.png" alt="Logo HMJ TI" />
       <div class="logo">HMJ TI</div>
       <nav>
         <a href="./beranda.html">Beranda</a>
@@ -24,21 +24,9 @@
       </nav>
     </header>
 
-    <!-- Keterangan Section -->
+    <!-- Keterangan Section - REVISI: Logo di tengah atas, text di bawah -->
     <section class="keterangan" id="tentang">
-      <div class="keterangan-left">
-        <h2>Keterangan tentang<br /><span>HMJ TI</span></h2>
-        <p>
-          Membangun HMJ TI Politeknik Negeri Jember sebagai wadah yang
-          menjunjung jiwa sosial dan kekeluargaan untuk mendukung pengembangan
-          akademik serta non-akademik mahasiswa guna menciptakan lingkungan
-          inklusif dan kolaboratif yang mengakomodasi potensi mahasiswa
-          Teknologi Informasi dalam prestasi, keterampilan, dan pengabdian
-          masyarakat, untuk mewujudkan mahasiswa berintegritas, kompeten, dan
-          berdaya saing tinggi.
-        </p>
-      </div>
-      <div class="keterangan-right">
+      <div class="keterangan-container">
         <div class="keterangan-icon">
           <img
             src="./assets/hmjti.png"
@@ -48,77 +36,85 @@
             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%2228%22 fill=%22%231e90ff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2220%22 font-weight=%22bold%22%3EHMJ%3C/text%3E%3C/svg%3E'"
           />
         </div>
+        <div class="keterangan-content">
+          <h2>Tentang<br /><span>HMJ TI POLIJE</span></h2>
+          <p>
+            Himpunan Mahasiswa Jurusan Teknologi Informasi (HMJ TI) merupakan
+            organisasi kemahasiswaan di Politeknik Negeri Jember yang menaungi
+            mahasiswa dan alumni Jurusan Teknologi Informasi Politeknik Negeri
+            Jember.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- Berita dan Layanan -->
+    <!-- Berita dan Layanan - REVISI: Button lebih besar -->
     <section class="info-section">
       <div class="info-card">
         <a href="./berita.html">
-          <div class="info-icon-box"></div>
           <img
             src="./assets/beranda/NEWS.png"
-            alt="LAYANAN"
-            width="150"
-            height="150"
-            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%2228%22 fill=%22%231e90ff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2220%22 font-weight=%22bold%22%3EHMJ%3C/text%3E%3C/svg%3E'"
+            alt="BERITA"
+            width="200"
+            height="200"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect width=%22200%22 height=%22200%22 fill=%22%231e90ff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2240%22 font-weight=%22bold%22%3ENEWS%3C/text%3E%3C/svg%3E'"
           />
         </a>
       </div>
       <div class="info-card">
         <a href="./layanan.html">
-          <div class="info-icon-box"></div>
-        <img
-          src="./assets/beranda/LAYANAN.png"
-          alt="LAYANAN"
-          width="150"
-          height="150"
-          onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%2228%22 fill=%22%231e90ff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2220%22 font-weight=%22bold%22%3EHMJ%3C/text%3E%3C/svg%3E'"
-        />
+          <img
+            src="./assets/beranda/LAYANAN.png"
+            alt="LAYANAN"
+            width="200"
+            height="200"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect width=%22200%22 height=%22200%22 fill=%22%231e90ff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22white%22 font-size=%2235%22 font-weight=%22bold%22%3ELAYANAN%3C/text%3E%3C/svg%3E'"
+          />
         </a>
       </div>
     </section>
 
-    <!-- Departemen Section -->
+    <!-- Departemen Section - REVISI: Button di atas, box di bawah -->
     <section class="departemen-section" id="departemen">
       <div class="departemen-container">
+        <h2 class="departemen-title">Penjelasan Departemen</h2>
+
         <div class="dept-buttons-wrapper">
-          <button class="dept-button active" data-dept="humas">
-            Dept.Humas Kominfo
+          <button class="dept-button" data-dept="BPH">
+            Badan Pengurus Harian
           </button>
-          <button class="dept-button" data-dept="kewirausahaan">
-            Departemen Kewirausahaan
+          <button class="dept-button" data-dept="administrasi">
+            Departemen Administrasi
           </button>
           <button class="dept-button" data-dept="keilmuan">
             Departemen Keilmuan
           </button>
           <button class="dept-button" data-dept="kaderisasi">
-            Departemen perhubungan
+            Departemen Perhubungan
           </button>
-          <button class="dept-button" data-dept="administrasi">
-            Departemen Administrasi
+          <button class="dept-button active" data-dept="humas">
+            Departemen Kominfo
           </button>
-          <button class="dept-button" data-dept="BPH">
-            Departemen BPH
+          <button class="dept-button" data-dept="kewirausahaan">
+            Departemen Kewirausahaan
           </button>
         </div>
 
         <div class="dept-info-box">
-          <h3>Penjelasan Departemen</h3>
           <div class="dept-description" id="deptDescription">
             <p>
-              Departemen Humas & Kominfo memiliki tugas untuk membuka sistem
-              informasi, hubungan masyarakat di internal dan eksternal,
-              merapikan serta meningkatkan SDM melalui pelatihan dan pembinaan
-              yang terstruktur, untuk memiliki kemampuan di bidang publisitas
-              hingga pengelolaan media yang informatif.
+              Departemen Kominfo memiliki tugas untuk membuka sistem informasi,
+              hubungan masyarakat di internal dan eksternal, merapikan serta
+              meningkatkan SDM melalui pelatihan dan pembinaan yang terstruktur,
+              untuk memiliki kemampuan di bidang publisitas hingga pengelolaan
+              media yang informatif.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Kritik dan Saran -->
+    <!-- Kritik dan Saran - TIDAK DIUBAH -->
     <section class="kritik-section" id="kritik">
       <div class="kritik-wrapper">
         <div class="kritik-left">
@@ -138,7 +134,7 @@
       </div>
     </section>
 
-    <!-- footer -->
+    <!-- footer - TIDAK DIUBAH -->
     <footer>
       <div class="footer-main">
         <div class="footer-banner">
@@ -236,9 +232,30 @@
     </footer>
 
     <script>
-      // Script untuk memastikan logo HMJ tampil di semua tempat
-      document.addEventListener("DOMContentLoaded", function () {
-        // Tambahkan event listener untuk tombol departemen
+      // Animasi Scroll untuk Info Cards
+      function animateOnScroll() {
+        const infoCards = document.querySelectorAll(".info-card");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          {
+            threshold: 0.2,
+          }
+        );
+
+        infoCards.forEach((card) => {
+          observer.observe(card);
+        });
+      }
+
+      // Departemen Button Handler dengan Animasi
+      function initDepartemenButtons() {
         const deptButtons = document.querySelectorAll(".dept-button");
         const deptDescription = document.getElementById("deptDescription");
 
@@ -256,16 +273,16 @@
             desc: "Departemen Keilmuan bertanggung jawab dalam mengembangkan kompetensi akademik mahasiswa TI melalui berbagai kegiatan seperti seminar, workshop, pelatihan teknis, dan kompetisi yang mendukung peningkatan hard skills di bidang teknologi informasi.",
           },
           kaderisasi: {
-            title: "Departemen Kaderisasi",
-            desc: "Departemen Kaderisasi bertugas membina dan mengembangkan karakter serta kepemimpinan anggota HMJ TI melalui program pelatihan, mentoring, dan kegiatan pengembangan soft skills untuk mencetak kader-kader organisasi yang berkualitas.",
+            title: "Departemen Perhubungan",
+            desc: "Departemen Perhubungan bertugas membina dan mengembangkan hubungan internal dan eksternal HMJ TI, mengelola komunikasi antar departemen, serta membangun kerjasama dengan organisasi lain untuk memperluas jaringan dan meningkatkan citra organisasi.",
           },
           administrasi: {
             title: "Departemen Administrasi",
             desc: "Departemen Administrasi mengelola segala urusan administratif organisasi, termasuk surat-menyurat, dokumentasi kegiatan, pengarsipan, dan pengelolaan database anggota untuk memastikan kelancaran operasional HMJ TI.",
           },
           BPH: {
-            title: "Departemen BPH",
-            desc: "BPH dalam organisasi kuliah adalah singkatan dari Badan Pengurus Harian, yang merupakan inti kepengurusan yang bertugas mengelola, mengawasi, dan mengoordinasikan seluruh kegiatan organisasi agar berjalan lancar. BPH biasanya terdiri dari jabatan inti seperti Ketua, Wakil Ketua, Sekretaris, dan Bendahara. Mereka berfungsi sebagai penggerak arah organisasi, pemantau jalannya program kerja, serta penanggung jawab administrasi dan keuangan. ",
+            title: "Badan Pengurus Harian",
+            desc: "BPH dalam organisasi kuliah adalah singkatan dari Badan Pengurus Harian, yang merupakan inti kepengurusan yang bertugas mengelola, mengawasi, dan mengoordinasikan seluruh kegiatan organisasi agar berjalan lancar. BPH biasanya terdiri dari jabatan inti seperti Ketua, Wakil Ketua, Sekretaris, dan Bendahara. Mereka berfungsi sebagai penggerak arah organisasi, pemantau jalannya program kerja, serta penanggung jawab administrasi dan keuangan.",
           },
         };
 
@@ -273,13 +290,15 @@
           button.addEventListener("click", function () {
             // Remove active class dari semua button
             deptButtons.forEach((btn) => btn.classList.remove("active"));
+
             // Add active class ke button yang diklik
             this.classList.add("active");
 
-            // Update deskripsi
+            // Update deskripsi dengan animasi fade
             const dept = this.getAttribute("data-dept");
             if (departmentData[dept]) {
               deptDescription.style.opacity = "0";
+
               setTimeout(() => {
                 deptDescription.innerHTML = `<p>${departmentData[dept].desc}</p>`;
                 deptDescription.style.opacity = "1";
@@ -287,24 +306,42 @@
             }
           });
         });
+      }
 
-        // Handle form submission
+      // Kritik Form Handler
+      function initKritikForm() {
         const kritikForm = document.getElementById("kritikForm");
+
         if (kritikForm) {
           kritikForm.addEventListener("submit", function (e) {
             e.preventDefault();
-            alert(
-              "Terima kasih atas kritik dan saran Anda! Pesan Anda telah terkirim."
-            );
-            this.reset();
+
+            // Animasi button saat submit
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+
+            submitBtn.textContent = "MENGIRIM...";
+            submitBtn.style.opacity = "0.7";
+
+            setTimeout(() => {
+              alert(
+                "Terima kasih atas kritik dan saran Anda! Pesan Anda telah terkirim."
+              );
+              this.reset();
+              submitBtn.textContent = originalText;
+              submitBtn.style.opacity = "1";
+            }, 1000);
           });
         }
+      }
 
-        // Smooth scrolling untuk navigasi
+      // Smooth Scrolling untuk Navigasi
+      function initSmoothScroll() {
         document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
           anchor.addEventListener("click", function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute("href"));
+
             if (target) {
               target.scrollIntoView({
                 behavior: "smooth",
@@ -313,6 +350,44 @@
             }
           });
         });
+      }
+
+      // Parallax Effect untuk Background (subtle)
+      function initParallax() {
+        const sections = document.querySelectorAll(
+          ".keterangan, .departemen-section"
+        );
+
+        window.addEventListener("scroll", () => {
+          const scrolled = window.pageYOffset;
+
+          sections.forEach((section) => {
+            const rate = scrolled * 0.5;
+            section.style.backgroundPositionY = rate + "px";
+          });
+        });
+      }
+
+      // Initialize semua fungsi saat DOM loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        // Jalankan semua fungsi animasi
+        animateOnScroll();
+        initDepartemenButtons();
+        initKritikForm();
+        initSmoothScroll();
+        initParallax();
+
+        // Fade in header saat load
+        const header = document.querySelector("header");
+        if (header) {
+          header.style.opacity = "0";
+          header.style.transition = "opacity 0.5s ease";
+          setTimeout(() => {
+            header.style.opacity = "1";
+          }, 100);
+        }
+
+        console.log("✅ HMJTI Beranda loaded successfully!");
       });
     </script>
   </body>
