@@ -271,16 +271,16 @@
     position: relative;
     height: 500px;
     background-size: cover;
-    background-image: url('../assets/tentang/background.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-/* Overlay gelap untuk membuat teks lebih terbaca */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -295,6 +295,17 @@
     );
     z-index: 1;
 }
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    width: 100%;
+    padding: 0 20px;
+}
+
 
 /* ==========================================
    FILE CSS - hero-section.css atau tambahkan ke style.css
