@@ -296,52 +296,6 @@
     z-index: 1;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: white;
-    max-width: 800px;
-    width: 100%;
-    padding: 0 20px;
-}
-
-
-/* ==========================================
-   FILE CSS - hero-section.css atau tambahkan ke style.css
-   ========================================== */
-
-/* Hero Section */
-.hero-section {
-    position: relative;
-    height: 500px;
-   background-image: url('../assets/tentang/background.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-/* Overlay gelap untuk membuat teks lebih terbaca */
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 8, 20, 0.5) 0%,
-        rgba(0, 16, 37, 0.7) 50%,
-        rgba(0, 60, 139, 0.6) 100%
-    );
-    z-index: 1;
-}
 
 /* Konten Hero */
 .hero-content {
@@ -373,47 +327,6 @@
     margin: 0;
 }
 
-/* Animasi */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-section {
-        height: 400px;
-    }
-    
-    .hero-content h1 {
-        font-size: 2em;
-    }
-    
-    .hero-content p {
-        font-size: 0.95em;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-section {
-        height: 350px;
-    }
-    
-    .hero-content h1 {
-        font-size: 1.5em;
-    }
-    
-    .hero-content p {
-        font-size: 0.85em;
-        line-height: 1.6;
-    }
-}
 
 /* Animasi */
 @keyframes fadeInUp {
@@ -618,7 +531,7 @@
 
     /* 2. Visi & Misi Section */
     .visi-misi-section {
-        background-color: transparent; /* Diubah menjadi transparent agar gradient body terlihat */
+        background-color: transparent; 
         color: var(--text-light);
         padding: 50px 0;
     }
@@ -694,11 +607,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        list-style: none; /* Hilangkan bullet default */
+        list-style: none; 
     }
 
     .filosofi-content ol li {
-        background-color: rgba(255, 255, 255, 0.1); /* Diubah untuk menyesuaikan background gelap */
+        background-color: rgba(255, 255, 255, 0.1); 
         padding: 15px;
         border-left: 5px solid var(--secondary-color);
         counter-increment: list-item;
@@ -726,18 +639,17 @@
 
     .map-placeholder {
         height: 400px;
-        background-color: #2a3e51; /* Diubah agar cocok dengan tema gelap */
+        background-color: #2a3e51; 
         display: flex;
         align-items: center;
         justify-content: center;
         color: var(--text-light); /* Diubah agar teks terlihat */
         font-size: 1.5em;
-        /* Ini akan menjadi iframe atau div dengan background map */
     }
 
     /* 6. Kontak Section */
     .kontak-section {
-        background-color: transparent; /* Diubah menjadi transparent */
+        background-color: transparent; 
         color: var(--text-light);
         padding: 20px 0 50px 0;
         text-align: center;
@@ -752,7 +664,6 @@
         display: flex;
         justify-content: space-around;
         gap: 20px;
-        /* Flexbox untuk ikon kontak */
     }
 
     .kontak-item {
