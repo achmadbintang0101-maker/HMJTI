@@ -385,13 +385,10 @@
     }
 }
 
-    /* PERUBAHAN DI SINI */
     body {
-        font-family: "Poppins", sans-serif; /* Ganti dengan font yang sesuai */
+        font-family: "Poppins", sans-serif; 
         line-height: 1.6;
-        color: white; /* Diubah menjadi white */
-        
-        /* Background baru dengan gradient */
+        color: white; 
         background: linear-gradient(
             to bottom,
             #000814 0%,
@@ -399,8 +396,8 @@
             #003C8B 100%
         );
         background-attachment: fixed;
-        min-height: 100vh; /* Ditambahkan */
-        margin: 0; /* Diperbarui (meskipun sudah di reset, lebih eksplisit) */
+        min-height: 100vh; 
+        margin: 0; 
     }
 
     .container {
@@ -412,22 +409,16 @@
 
     /* Warna Utama */
     :root {
-        --primary-color: #0c1a2c; /* Biru gelap untuk latar belakang utama */
-        --secondary-color: #004ba0; /* Warna aksen/merah bata */
+        --primary-color: #0c1a2c; 
+        --secondary-color: #004ba0; 
         --text-light: #ffffff;
         --text-dark: #333333;
     }
 
-
-/* ==========================================
-   FILE CSS - hero-section.css atau tambahkan ke style.css
-   ========================================== */
-
-/* Hero Section */
 .hero-section {
     position: relative;
     height: 500px;
-    background-image: url('background.jpeg'); /* Ganti dengan path gambar gedung Anda */
+    background-image: url('background.jpeg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -439,7 +430,6 @@
     padding: 0;
 }
 
-/* Overlay gelap untuk membuat teks lebih terbaca */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -484,7 +474,7 @@
     line-height: 1.8;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
     margin: 0;
-    background: transparent; /* Menghilangkan background */
+    background: transparent;
 }
 
 /* Animasi */
@@ -591,7 +581,6 @@
     }
 
     .logo-area .image-logo {
-        /* Gaya untuk area logo (lingkaran di gambar) */
         width: 300px;
         height: 300px;
         margin: 20px auto;
@@ -643,7 +632,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(--text-light); /* Diubah agar teks terlihat */
+        color: var(--text-light); 
         font-size: 1.5em;
     }
 
@@ -674,7 +663,7 @@
         font-size: 2em;
         display: block;
         margin-bottom: 10px;
-        color: var(--secondary-color); /* Warna ikon */
+        color: var(--secondary-color); 
     }
 
 /* ===== SCROLL TO TOP BUTTON ===== */
